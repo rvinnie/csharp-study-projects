@@ -1,0 +1,15 @@
+E:\Alexey\VSProjects\d00\d00_ex00\bin\Debug\net6.0\d00_ex00.exe
+E:\Alexey\VSProjects\d00\d00_ex00\bin\Debug\net6.0\d00_ex00.deps.json
+E:\Alexey\VSProjects\d00\d00_ex00\bin\Debug\net6.0\d00_ex00.runtimeconfig.json
+E:\Alexey\VSProjects\d00\d00_ex00\bin\Debug\net6.0\d00_ex00.dll
+E:\Alexey\VSProjects\d00\d00_ex00\bin\Debug\net6.0\ref\d00_ex00.dll
+E:\Alexey\VSProjects\d00\d00_ex00\bin\Debug\net6.0\d00_ex00.pdb
+E:\Alexey\VSProjects\d00\d00_ex00\obj\Debug\net6.0\d00_ex00.csproj.AssemblyReference.cache
+E:\Alexey\VSProjects\d00\d00_ex00\obj\Debug\net6.0\d00_ex00.GeneratedMSBuildEditorConfig.editorconfig
+E:\Alexey\VSProjects\d00\d00_ex00\obj\Debug\net6.0\d00_ex00.AssemblyInfoInputs.cache
+E:\Alexey\VSProjects\d00\d00_ex00\obj\Debug\net6.0\d00_ex00.AssemblyInfo.cs
+E:\Alexey\VSProjects\d00\d00_ex00\obj\Debug\net6.0\d00_ex00.csproj.CoreCompileInputs.cache
+E:\Alexey\VSProjects\d00\d00_ex00\obj\Debug\net6.0\d00_ex00.dll
+E:\Alexey\VSProjects\d00\d00_ex00\obj\Debug\net6.0\ref\d00_ex00.dll
+E:\Alexey\VSProjects\d00\d00_ex00\obj\Debug\net6.0\d00_ex00.pdb
+E:\Alexey\VSProjects\d00\d00_ex00\obj\Debug\net6.0\d00_ex00.genruntimeconfig.cache
