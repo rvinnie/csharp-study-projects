@@ -47,21 +47,39 @@
 				throw new ArgumentException("Wrong type");
 
 			DateTime? dueDateRes = null;
-			bool isConvertedToData = DateTime.TryParse(dueDate, out DateTime dueDateFromParse);
-			if (isConvertedToData)
+			if (DateTime.TryParse(dueDate, out DateTime dueDateFromParse))
 				dueDateRes = dueDateFromParse;
-			if (!isConvertedToData && dueDate != null)
-				throw new ArgumentException("Wrong dueDate");
 
 			TaskPriority priorityRes = TaskPriority.Normal;
 			bool isConvertedToPriority = Enum.TryParse(typeof(TaskPriority), priority, out object? priorityFromParse);
 			if (isConvertedToPriority && priorityFromParse != null
 				&& Enum.IsDefined(typeof(TaskPriority), (TaskPriority)priorityFromParse))
 				priorityRes = (TaskPriority)priorityFromParse;
-			if (!isConvertedToPriority && priority != null)
-				throw new ArgumentException("Wrong priority");
 
 			return new Task(title, (TaskType)typeRes, summary, dueDateRes, priorityRes);
+		}
+
+		public void SetDone()
+        {
+			if (State != TaskState.Wontdo)
+				State = TaskState.Done;
+		}
+
+		public void SetWontdo()
+        {
+			if (State != TaskState.Done)
+				State = TaskState.Wontdo;
+		}
+
+        public override string ToString()
+        {
+			string ret = $"{Title}\n[{Type}] [{State}]\nPriority: {Priority}";
+			if (DueDate != null)
+				ret += $", Due till {DueDate:MM/dd/yyyy}";
+			ret += "\n";
+			if (!string.IsNullOrEmpty(Summary))
+				ret += $"{Summary}\n";
+			return ret;
 		}
 	}
 }

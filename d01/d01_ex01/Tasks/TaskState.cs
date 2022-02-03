@@ -4,6 +4,6 @@
 	{
 		New,
 		Done,
-		Irrelevant
+		Wontdo
 	}
 }

@@ -1,20 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rvinnie\\source\\repos\\csharp_piscine\\d01\\d01_ex01\\d01_ex01.csproj": {}
+    "E:\\Alexey\\VSProjects\\csharp_piscine\\d01\\d01_ex01\\d01_ex01.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rvinnie\\source\\repos\\csharp_piscine\\d01\\d01_ex01\\d01_ex01.csproj": {
+    "E:\\Alexey\\VSProjects\\csharp_piscine\\d01\\d01_ex01\\d01_ex01.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rvinnie\\source\\repos\\csharp_piscine\\d01\\d01_ex01\\d01_ex01.csproj",
+        "projectUniqueName": "E:\\Alexey\\VSProjects\\csharp_piscine\\d01\\d01_ex01\\d01_ex01.csproj",
         "projectName": "d01_ex01",
-        "projectPath": "C:\\Users\\rvinnie\\source\\repos\\csharp_piscine\\d01\\d01_ex01\\d01_ex01.csproj",
-        "packagesPath": "C:\\Users\\rvinnie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rvinnie\\source\\repos\\csharp_piscine\\d01\\d01_ex01\\obj\\",
+        "projectPath": "E:\\Alexey\\VSProjects\\csharp_piscine\\d01\\d01_ex01\\d01_ex01.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "E:\\Alexey\\VSProjects\\csharp_piscine\\d01\\d01_ex01\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\rvinnie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
