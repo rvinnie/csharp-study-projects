@@ -4,15 +4,10 @@ using d02_ex00.Model;
 
 namespace d02_ex00
 {
-    public class JsonResponseBook
+    public class JsonResponse<T>
     {
         [JsonPropertyName("results")]
-        public List<Book> Results { get; set; }
-    }
-    public class JsonResponseMovie
-    {
-        [JsonPropertyName("results")]
-        public List<Movie> Results { get; set; }
+        public List<T> Results { get; set; }
     }
 
     public class Program
@@ -22,8 +17,13 @@ namespace d02_ex00
             Console.WriteLine($"There are no “{search}” in media today.");
         }
 
-        static void PrintFoundMedia(List<ISearchable> media)
+        static void PrintFoundMedia(string target, List<ISearchable> media)
         {
+            if (media.Count == 0)
+            {
+                PrintNotFoundMsg(target);
+                return;
+            }
             Console.WriteLine($"Items found: {media.Count}");
 
             List<Book> books = media
@@ -68,7 +68,7 @@ namespace d02_ex00
 
             using (var fs = new FileStream(pathToBooks, FileMode.Open))
             {
-                JsonResponseBook? response = JsonSerializer.Deserialize<JsonResponseBook>(fs);
+                JsonResponse<Book>? response = JsonSerializer.Deserialize<JsonResponse<Book>>(fs);
                 var books = response?.Results;
                     
                 if (books != null)
@@ -82,7 +82,7 @@ namespace d02_ex00
 
             using (var fs = new FileStream(pathToMovies, FileMode.Open))
             {
-                JsonResponseMovie? response = JsonSerializer.Deserialize<JsonResponseMovie>(fs);
+                JsonResponse<Movie>? response = JsonSerializer.Deserialize<JsonResponse<Movie>>(fs);
                 var movies = response?.Results;
                 if (movies != null)
                 {
@@ -97,18 +97,17 @@ namespace d02_ex00
 
         static void Main(string[] args)
         {
-            Console.WriteLine("> Input search text:");
-            string target = Console.ReadLine() ?? "";
-            if (string.IsNullOrEmpty(target))
-            {
-                PrintNotFoundMsg(target);
-                return;
-            }
-
             try
             {
                 var medias = ParseJsonFiles("book_reviews.json", "movie_reviews.json");
-                PrintFoundMedia(LaunchSearch(target, medias));
+                Console.WriteLine("> Input search text:");
+                string target = Console.ReadLine() ?? "";
+                if (string.IsNullOrEmpty(target))
+                {
+                    PrintNotFoundMsg(target);
+                    return;
+                }
+                PrintFoundMedia(target, LaunchSearch(target, medias));
             }
             catch (IOException)
             {
