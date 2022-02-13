@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "QnrAB59IVphInYztL27F0PILLYyV1dqzhvYfc49OHWxRtvU6Som8LKjBJTDEmxwepf6EJ6tlItpcnt+Mk99t9A==",
+  "dgSpecHash": "nBHu+ndTDxUeuM11oFaknC1rUDjZdf3FW0ZEo/taCs1BzB6Z//Zk0WA/hSXXObSKSLgw+3a1vcAYW2sPkR5iMA==",
   "success": true,
   "projectFilePath": "C:\\Users\\rv1nn\\source\\repos\\csharp_piscine\\d02\\d02_ex01\\d02_ex01.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\rv1nn\\.nuget\\packages\\yamldotnet\\11.2.1\\yamldotnet.11.2.1.nupkg.sha512"
+  ],
   "logs": []
 }
