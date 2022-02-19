@@ -1,0 +1,15 @@
+C:\Users\rv1nn\source\repos\csharp_piscine\d03\d03.Nasa\bin\Debug\net6.0\d03.Nasa.exe
+C:\Users\rv1nn\source\repos\csharp_piscine\d03\d03.Nasa\bin\Debug\net6.0\d03.Nasa.deps.json
+C:\Users\rv1nn\source\repos\csharp_piscine\d03\d03.Nasa\bin\Debug\net6.0\d03.Nasa.runtimeconfig.json
+C:\Users\rv1nn\source\repos\csharp_piscine\d03\d03.Nasa\bin\Debug\net6.0\d03.Nasa.dll
+C:\Users\rv1nn\source\repos\csharp_piscine\d03\d03.Nasa\bin\Debug\net6.0\ref\d03.Nasa.dll
+C:\Users\rv1nn\source\repos\csharp_piscine\d03\d03.Nasa\bin\Debug\net6.0\d03.Nasa.pdb
+C:\Users\rv1nn\source\repos\csharp_piscine\d03\d03.Nasa\obj\Debug\net6.0\d03.Nasa.csproj.AssemblyReference.cache
+C:\Users\rv1nn\source\repos\csharp_piscine\d03\d03.Nasa\obj\Debug\net6.0\d03.Nasa.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rv1nn\source\repos\csharp_piscine\d03\d03.Nasa\obj\Debug\net6.0\d03.Nasa.AssemblyInfoInputs.cache
+C:\Users\rv1nn\source\repos\csharp_piscine\d03\d03.Nasa\obj\Debug\net6.0\d03.Nasa.AssemblyInfo.cs
+C:\Users\rv1nn\source\repos\csharp_piscine\d03\d03.Nasa\obj\Debug\net6.0\d03.Nasa.csproj.CoreCompileInputs.cache
+C:\Users\rv1nn\source\repos\csharp_piscine\d03\d03.Nasa\obj\Debug\net6.0\d03.Nasa.dll
+C:\Users\rv1nn\source\repos\csharp_piscine\d03\d03.Nasa\obj\Debug\net6.0\ref\d03.Nasa.dll
+C:\Users\rv1nn\source\repos\csharp_piscine\d03\d03.Nasa\obj\Debug\net6.0\d03.Nasa.pdb
+C:\Users\rv1nn\source\repos\csharp_piscine\d03\d03.Nasa\obj\Debug\net6.0\d03.Nasa.genruntimeconfig.cache

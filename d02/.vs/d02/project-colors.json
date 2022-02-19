@@ -5,7 +5,17 @@
       "ProjectGuid": "36195ae6-f2b1-4825-b99b-f9d4a40eacab",
       "DisplayName": "d02_ex00",
       "ColorIndex": 0
+    },
+    "c3fdbc36-c7bd-46f1-9be7-1db157bf4439": {
+      "ProjectGuid": "c3fdbc36-c7bd-46f1-9be7-1db157bf4439",
+      "DisplayName": "d02_ex01",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Прочие файлы",
+      "ColorIndex": -1
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 2
 }
