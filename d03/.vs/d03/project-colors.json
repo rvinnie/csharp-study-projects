@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "a335ae74-b450-4d5d-ad38-97354c981391": {
+      "ProjectGuid": "a335ae74-b450-4d5d-ad38-97354c981391",
+      "DisplayName": "d03.Nasa",
+      "ColorIndex": 0
+    },
+    "f50b5e8f-2df3-4b05-9d51-ab6cabeaf2bc": {
+      "ProjectGuid": "f50b5e8f-2df3-4b05-9d51-ab6cabeaf2bc",
+      "DisplayName": "d03.Host",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

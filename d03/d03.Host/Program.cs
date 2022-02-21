@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Configuration.Json;
 
+using d03.Nasa.Apod; 
+
 namespace d03.Host
 {
     class Program
@@ -16,9 +18,12 @@ namespace d03.Host
             {                 
                 IConfiguration configuration;
                 configuration = new ConfigurationBuilder()
-                                .AddJsonFile(@"appsettings.json")
+                                .AddJsonFile("appsettings.json")
                                 .Build();
                 string ApiKey = configuration["ApiKey"];
+
+                var apodClient = new ApodClient(ApiKey);
+
                 Console.WriteLine(ApiKey);
             }
             catch (IOException)

@@ -166,6 +166,16 @@
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         }
+      },
+      "d03.Nasa/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/d03.Nasa.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/d03.Nasa.dll": {}
+        }
       }
     }
   },
@@ -447,11 +457,17 @@
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "d03.Nasa/1.0.0": {
+      "type": "project",
+      "path": "../d03.Nasa/d03.Nasa.csproj",
+      "msbuildProject": "../d03.Nasa/d03.Nasa.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Microsoft.Extensions.Configuration.Json >= 6.0.0"
+      "Microsoft.Extensions.Configuration.Json >= 6.0.0",
+      "d03.Nasa >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -485,7 +501,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\rv1nn\\source\\repos\\csharp_piscine\\d03\\d03.Nasa\\d03.Nasa.csproj": {
+              "projectPath": "C:\\Users\\rv1nn\\source\\repos\\csharp_piscine\\d03\\d03.Nasa\\d03.Nasa.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
