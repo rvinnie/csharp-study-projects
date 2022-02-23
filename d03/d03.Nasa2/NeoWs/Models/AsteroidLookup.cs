@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace d03.Nasa.NeoWs.Models
 {
-    internal class AsteroidLookup
+    public class AsteroidLookup
     {
     }
 }

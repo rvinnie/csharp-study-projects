@@ -1,12 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text.Json.Serialization;
 
 namespace d03.Nasa.NeoWs.Models
 {
-    internal class AsteroidInfo
+    public class MissDistance
     {
+        [JsonPropertyName("kilometers")]
+        public double kilometers { get; set; }
+    }
+
+    public class AsteroidInfo
+    {
+        [JsonPropertyName("id")]
+        public long Id { get; set; }
+
+        [JsonPropertyName("close_approach_data")]
+        public List<MissDistance>? CloseData { get; set; }
     }
 }

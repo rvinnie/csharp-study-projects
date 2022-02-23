@@ -8,6 +8,7 @@ using Microsoft.Extensions.Configuration.Json;
 
 using d03.Nasa.Apod;
 using d03.Nasa.Apod.Models;
+using System.Globalization;
 
 namespace d03.Host
 {
@@ -35,6 +36,8 @@ namespace d03.Host
 
         public static async Task Main(string[] args)
         {
+            CultureInfo.CurrentCulture = new CultureInfo("en-GB", useUserOverride: false);
+
             if (args.Count() != 2)
             {
                 Console.WriteLine("Wrong number of arguments.");
@@ -65,7 +68,6 @@ namespace d03.Host
                 else
                 {
                     //await launchNeoWs(apiKey, int.Parse(args[1]));
-
                 }
             }
             catch (IOException)
