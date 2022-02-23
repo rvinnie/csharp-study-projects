@@ -18,7 +18,8 @@ namespace d03.Nasa.Apod
 
         public async Task<MediaOfToday[]> GetAsync(int ResultCount)
         {
-            return await HttpGetAsync<MediaOfToday[]>($"{URL}?count={ResultCount}&api_key={_apiKey}");
+            return await HttpGetAsync<MediaOfToday[]>($"{URL}?count={ResultCount}&api_key={_apiKey}")
+                ?? throw new HttpRequestException("Bad ");
         }
     }
 }

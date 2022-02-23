@@ -22,11 +22,15 @@ namespace d03.Nasa
             _httpClient = new HttpClient();
         }
 
-        protected async Task<T?> HttpGetAsync<T>(string url)
+        protected async Task<T> HttpGetAsync<T>(string url)
         {
-            var httpResponse = await _httpClient.GetAsync(url);
+            using var httpResponse = await _httpClient.GetAsync(url);
             if (httpResponse.IsSuccessStatusCode)
-                return await httpResponse.Content.ReadFromJsonAsync<T>();
+            {
+                var content = await httpResponse.Content.ReadFromJsonAsync<T>();
+                if (content != null)
+                    return content;
+            }
 
             var httpResponseBody = await httpResponse.Content.ReadAsStringAsync();
             throw new HttpRequestException($"GET {url} returned {httpResponse.StatusCode}:\n{httpResponseBody}");

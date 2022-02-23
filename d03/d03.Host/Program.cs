@@ -9,6 +9,8 @@ using Microsoft.Extensions.Configuration.Json;
 using d03.Nasa.Apod;
 using d03.Nasa.Apod.Models;
 using System.Globalization;
+using d03.Nasa.NeoWs;
+using d03.Nasa.NeoWs.Models;
 
 namespace d03.Host
 {
@@ -21,7 +23,11 @@ namespace d03.Host
             {
                 var medias = await apodClient.GetAsync(count);
                 foreach (var media in apodClient.GetAsync(count).Result)
-                    Console.WriteLine(media + "\n");
+                {
+                    Console.WriteLine(media);
+                    Console.WriteLine();
+                }
+
             }
             catch (HttpRequestException ex)
             {
@@ -29,8 +35,30 @@ namespace d03.Host
             }
         }
 
-        public static void launchNeoWs(string apiKey, int count)
+        public static async Task launchNeoWs(string apiKey, int count, string startDate, string endDate)
         {
+            try
+            {
+                var neoWsClient = new NeoWsClient(apiKey, count, startDate, endDate);
+                var asteroids = await neoWsClient.GetAsync(neoWsClient.Request);
+                foreach (var asteroid in asteroids)
+                {
+                    Console.WriteLine(asteroid);
+                    Console.WriteLine();
+                }
+            }
+            catch (HttpRequestException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("Wrong dates in configuration.");
+            }
+            catch (ArgumentException ae)
+            {
+                Console.WriteLine(ae.Message);
+            }
 
         }
 
@@ -43,7 +71,7 @@ namespace d03.Host
                 Console.WriteLine("Wrong number of arguments.");
                 return;
             }
-            if (args[0] != "apod" && args[1] != "neows")
+            if (args[0] != "apod" && args[0] != "neows")
             {
                 Console.WriteLine("Wrong first argument.");
                 return;
@@ -60,6 +88,8 @@ namespace d03.Host
                 configuration = new ConfigurationBuilder()
                                 .AddJsonFile("appsettings.json")
                                 .Build();
+                string startDate = configuration["NeoWs:StartDate"];
+                string endDate = configuration["NeoWs:EndDate"];
                 string apiKey = configuration["ApiKey"];
                 if (args[0] == "apod")
                 {
@@ -67,7 +97,7 @@ namespace d03.Host
                 }
                 else
                 {
-                    //await launchNeoWs(apiKey, int.Parse(args[1]));
+                    await launchNeoWs(apiKey, int.Parse(args[1]), startDate, endDate);
                 }
             }
             catch (IOException)

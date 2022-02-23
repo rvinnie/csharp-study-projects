@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using d03.Nasa.NeoWs.Models;
 using d03.Nasa;
+using System.Text.Json.Serialization;
 
 namespace d03.Nasa.NeoWs
 {
@@ -17,35 +18,39 @@ namespace d03.Nasa.NeoWs
 
         public AsteroidRequest Request { get; set; }
 
-
         public NeoWsClient(string apiKey, int count,
                             string startDate, string endDate): base(apiKey)
         {
             Request = new AsteroidRequest()
             {
-                StartDate = DateTime.Parse(startDate),
-                EndDate = DateTime.Parse(endDate),
+                StartDate = startDate,
+                EndDate = endDate,
                 ResultCount = count
             };
         }
 
-        private string FormUrl(AsteroidRequest input, string urn)
-        {
-            return $"{urn}?start_date={input.StartDate}&end_date={input.EndDate}&api_key={_apiKey}";
-        }
         public async Task<AsteroidLookup[]> GetAsync(AsteroidRequest request)
         {
-            string NeoFeedUrl = FormUrl(request, NeoFeedUrn);
-            var NeoFeedResponse = await HttpGetAsync< Dictionary<DateTime, AsteroidInfo> >(NeoFeedUrl);
-            var asteroidInfoList = NeoFeedResponse?
+            var NeoFeedResponse = await HttpGetAsync<InfoResponse>
+                (
+                    $"{NeoFeedUrn}?start_date={request.StartDate}&end_date={request.EndDate}&api_key={_apiKey}"
+                );
+            var asteroidInfoList = NeoFeedResponse?.Response?
                                 .Values
-                                .OrderBy(asteroid => asteroid.CloseData?[0].kilometers)
+                                .SelectMany(asteroid => asteroid)
+                                .OrderBy(asteroid => asteroid.Kilometers)
                                 .Take(request.ResultCount)
                                 .ToList();
+            if (asteroidInfoList == null)
+                throw new ArgumentException("List of Asteroids is empty.");
             return await Task.WhenAll(asteroidInfoList.Select(asteroid =>
-                            HttpGetAsync<AsteroidLookup>($"{urn}{asteroid.Id}?api_key={_apiKey}")));
-
+                            HttpGetAsync<AsteroidLookup>($"{NeoLookupUrn}/{asteroid.Id}?api_key={_apiKey}")));
         }
 
+        public class InfoResponse
+        {
+            [JsonPropertyName("near_earth_objects")]
+            public Dictionary<DateTime, List<AsteroidInfo>>? Response { get; set; }
+        }
     }
 }
