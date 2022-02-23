@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\d03.Nasa\d03.Nasa.csproj" />
+    <ProjectReference Include="..\d03.Nasa2\d03.Nasa.csproj" />
   </ItemGroup>
 
   <ItemGroup>

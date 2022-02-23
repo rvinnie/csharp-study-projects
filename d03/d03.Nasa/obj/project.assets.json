@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rv1nn\\source\\repos\\csharp_piscine\\d03\\d03.Nasa\\d03.Nasa.csproj",
-      "projectName": "d03.Nasa",
-      "projectPath": "C:\\Users\\rv1nn\\source\\repos\\csharp_piscine\\d03\\d03.Nasa\\d03.Nasa.csproj",
+      "projectUniqueName": "C:\\Users\\rv1nn\\source\\repos\\csharp_piscine\\d03\\d03.Nasa\\d03.Nas.csproj",
+      "projectName": "d03.Nas",
+      "projectPath": "C:\\Users\\rv1nn\\source\\repos\\csharp_piscine\\d03\\d03.Nasa\\d03.Nas.csproj",
       "packagesPath": "C:\\Users\\rv1nn\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\rv1nn\\source\\repos\\csharp_piscine\\d03\\d03.Nasa\\obj\\",
       "projectStyle": "PackageReference",

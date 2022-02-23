@@ -460,8 +460,8 @@
     },
     "d03.Nasa/1.0.0": {
       "type": "project",
-      "path": "../d03.Nasa/d03.Nasa.csproj",
-      "msbuildProject": "../d03.Nasa/d03.Nasa.csproj"
+      "path": "../d03.Nasa2/d03.Nasa.csproj",
+      "msbuildProject": "../d03.Nasa2/d03.Nasa.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -502,8 +502,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\rv1nn\\source\\repos\\csharp_piscine\\d03\\d03.Nasa\\d03.Nasa.csproj": {
-              "projectPath": "C:\\Users\\rv1nn\\source\\repos\\csharp_piscine\\d03\\d03.Nasa\\d03.Nasa.csproj"
+            "C:\\Users\\rv1nn\\source\\repos\\csharp_piscine\\d03\\d03.Nasa2\\d03.Nasa.csproj": {
+              "projectPath": "C:\\Users\\rv1nn\\source\\repos\\csharp_piscine\\d03\\d03.Nasa2\\d03.Nasa.csproj"
             }
           }
         }
