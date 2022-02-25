@@ -1,1 +1,1 @@
-# csharp_piscine
+# csharp-study-projects
