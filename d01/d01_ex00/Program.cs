@@ -9,7 +9,6 @@ namespace d01
 
 		static void Main(string[] args)
 		{
-			CultureInfo.CurrentCulture = CultureInfo.GetCultureInfo("en-US");
 			if (args.Length != 2)
 			{
 				Console.WriteLine(ERROR_MSG);
