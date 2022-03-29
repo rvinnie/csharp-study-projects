@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+SDZ1M2IPvPQW78QIyhasN9XBjJO0ZiB8vvnHEfNZrfAwFwu0TS1tcjYUiA5L+sU7X/YP2t5fSfJFq349ohf5g==",
+  "dgSpecHash": "+2YsFMim9IfbjLzt6sN57cwCAtiDCHDvW5MpiRaEl9gHtS64h9wUZd6V4/JZ8U2xs6eHhrrwHUHjIi45MqcN2A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rv1nn\\source\\repos\\csharp-study-projects\\d04\\d04_ex00\\d04_ex00.csproj",
+  "projectFilePath": "C:\\Users\\rv1nn\\Source\\Repos\\csharp-study-projects\\d04\\d04_ex00\\d04_ex00.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rv1nn\\.nuget\\packages\\microsoft.aspnetcore.http\\2.2.2\\microsoft.aspnetcore.http.2.2.2.nupkg.sha512",
     "C:\\Users\\rv1nn\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
