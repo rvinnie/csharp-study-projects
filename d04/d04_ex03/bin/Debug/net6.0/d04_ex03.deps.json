@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "d04_ex03/1.0.0": {
+        "dependencies": {
+          "d04_ex02": "1.0.0"
+        },
+        "runtime": {
+          "d04_ex03.dll": {}
+        }
+      },
+      "d04_ex02/1.0.0": {
+        "runtime": {
+          "d04_ex02.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "d04_ex03/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "d04_ex02/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
