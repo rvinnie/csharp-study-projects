@@ -25,7 +25,12 @@
       "ProjectGuid": "f5fe0d0f-792e-4386-b98c-db1683841049",
       "DisplayName": "d04_ex02",
       "ColorIndex": 3
+    },
+    "26b26000-cdef-4173-b3b1-6cd23da083ad": {
+      "ProjectGuid": "26b26000-cdef-4173-b3b1-6cd23da083ad",
+      "DisplayName": "d04_ex03",
+      "ColorIndex": 4
     }
   },
-  "NextColorIndex": 4
+  "NextColorIndex": 5
 }
